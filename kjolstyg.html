@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ab Sorundann - Tyg till kjol</title>    
+    <title>Ab Sorundann</title>
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <header>
-        <a class="logo" href="#"><img class="logo" src="img/" alt="Sorundann logga"></a>
-        <nav class="nav top">
-            <ul>
-                <li><a href="#">Sök</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Önskelista</a></li>
-            </ul>
-        </nav class="nav top">
-        <nav class="nav header">
-            <ul>
-                <li><a href="#produkt lista">Produkter</a></li>
-                <li><a href="#">Om mig</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
-        </nav class="nav header">
-    </header>
-
-    <main>
-        <section id="produkt lista">
-            <p>This is the produkter section of the website.</p>
-            <nav class ="nav produkter">
-                <ul>
-                    <li><a href="#">Dräktmaterial</a></li>
-                    <li><a href="#">Mönster</a></li>
-                    <li><a href="#">Tröjor</a></li>
-                    <li><a href="#">Kurser</a></li>
-                    <li><a href="#">Övrigt</a></li>
-                </ul>
-            </nav class ="nav produkter">
-        </section>
-
-        <section>
+    <div class="wrapper"> <!--Grid container-->
+        <header class="header"> <!--Grid-item-->
             
-        </section>
-    </main>
+            <nav class="nav top"><!--Flex-container-->
+            <a class="logo" href="index.html"><img class="logo" src="img/Logga AW.png" alt="Sorundann logga"></a>    
+                <ul class="nav top"> <!--Flex-container-->
+                    <li class="menu_items"><a class="menu_link" href="#">Sök</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link" href="#">Information</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link" href="#">Önskelista</a></li> <!--Flex-item-->
+                </ul>
+            </nav class="nav top">
+            <nav class="menu">
+                <ul class="nav menu"> <!--Flex-container-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="index.html">Produkter</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="#">Om mig</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="#kontakt">Kontakt</a></li> <!--Flex-item-->
+                </ul>
+            </nav class="menu">
+        </header> <!--Grid-item end-->
 
-    <footer>
-        <section class="företag">
-            <img class="logo" src="img/" alt="Sorundann logga">
-            <h1>Ab Sorundann</h1>
-            <p>Ann Mysing</p>
-        </section class="företag">
-        <section id="kontakt">
-            <img src="img/" alt="email ikon">
-            <p>Email: </p>
-        </section id="kontakt">
-        <section class="sociala medier">
-            <p>@sorundann</p>
-            <img class="sm" src="img/" alt="Instagram ikon">
-            <img class="sm" src="img/" alt="Instagram ikon">
-            <img class="sm" src="img/" alt="Instagram ikon">
-        </section class="sociala medier">
-    </footer>
-    
+        <main class="main-content"><!--Grid-item-->
+            <section id="produkt lista">
+                <nav class ="nav produkter">
+                    <ul class="nav produkter">
+                        <li><a class="menu_link" href="index.html#dräktmaterial">Dräktmaterial</a></li>
+                        <li><a class="menu_link" href="#">Mönster</a></li>
+                        <li><a class="menu_link" href="#">Tröjor</a></li>
+                        <li><a class="menu_link" href="#">Kurser</a></li>
+                        <li><a class="menu_link" href="#">Övrigt</a></li>
+                    </ul>
+                </nav class ="nav produkter">
+            </section>
+
+
+            <section>
+
+            </section>
+        </main> <!--Grid-item end-->    
+
+        <footer> <!--Grid-item-->
+            <section id="kontakt" class="kontakt">
+                <p class="kontakt">Email: info@sorundann.se</p>
+                <ul class="social">
+                    <li class="sm"><img class="sm"></li>
+                    <li class="sm"><img class="sm_1" src="img/Placeholder.jpg" alt="email ikon"></li>
+                    <li class="sm"><img class="sm"></li>   
+                </ul>
+            </section>
+            <section class="företag">
+                <a class="logo" href="index.html"><img class="footer" src="img/Logga AW.png" alt="Sorundann logga"></a>  
+                <section class="AB">
+                    <h1 class="footer">Ab Sorundann</h1>
+                    <p class="footer">Ann Mysing</p>
+                </section>
+            </section>
+            <section class="social">
+                <h2 class="footer">@sorundann</h2>
+                <ul class="social">
+                    <li class="sm"><a class="sm"><img class="sm" src="img/Placeholder.jpg" alt="Instagram ikon"></a></li>
+                    <li class="sm"><a class="sm"><img class="sm" src="img/Placeholder.jpg" alt="Instagram ikon"></a></li>
+                    <li class="sm"><a class="sm"><img class="sm" src="img/Placeholder.jpg" alt="Instagram ikon"></a></li>
+                </ul>
+            </section>
+        </footer> <!--Grid-item end--> 
+    </div> <!--End of grid container-->
 </body>
 </html>

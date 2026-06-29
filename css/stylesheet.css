@@ -167,11 +167,9 @@ ul.nav.produkter {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 10px;
     padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
     background: #DDD3B8;
     font-size: 130%;
 }
@@ -275,7 +273,7 @@ a.buy:hover {
 }
 
 a.buy:active {
-    background:  #2c412c;
+    background:  #244824;
     border-color: #222;
 }
 
@@ -368,17 +366,17 @@ section.kontakt {
     padding-bottom: 20%;
 }
 
-img.kontakt {
-    width: 20%;
-    margin: 2%;
+img.sm_1 {
+    height: 38.5px;
 }
 
 p.kontakt {
     font-size: 100%;
-    padding: 5%;
+    text-align: center;
     background: #DDD3B8;
     margin: 2%;
-    max-height: 45px;
+    height: 45px;
+    padding: 4%;
 }
 
 
@@ -398,18 +396,26 @@ ul.social {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 5%;
     width: 100%;
     margin: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-height: 46px;
 }
 
 h2.footer {
     font-size: 130%;
+    margin: 2%;
+    height: 45px;
     padding: 4%;
     padding-left: 10%;
     padding-right: 10%;
     background: #DDD3B8;
-    margin: 2%;
-    max-height: 45px;
+}
+
+img.sm {
+    width: 100%;
 }
 
 
