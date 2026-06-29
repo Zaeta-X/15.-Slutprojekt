@@ -1,0 +1,99 @@
+@media screen and (max-width: 700px) {
+    body {
+        display: grid;
+        justify-content: center;
+    }
+    .wrapper {
+        grid-template-columns: repeat(3,1fr);
+    }
+    main.main-content {
+        justify-content: center;
+        margin-top: 0px;
+        gap: 15px;
+        grid-column-start: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article {
+        flex-direction: column;
+    }
+    img.logo {
+        width: 100%;
+        justify-content: center;
+    }
+    nav.menu {
+        justify-content: center;
+    }
+    header.header {
+        margin-bottom: 0px;
+        grid-column-start: 1;
+    }
+    section.footer {
+        justify-self: center;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 0;
+        padding-right: 0;
+        gap: 10px;
+        font-size: smaller;
+    }
+    footer {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1399){
+    body {
+        display: grid;
+        align-content: space-between;
+    }
+    main.main-content {
+        margin-top: 0px;
+        gap: 15px; 
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .wrapper {
+        grid-template-columns: repeat(12,1fr);
+    }    
+    .header {
+        grid-area: header;
+            grid-row-start: 1;
+            grid-column-start: 3;
+            grid-column-end: 11;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .main-content {
+    grid-area: main;
+        grid-column-start: 3;
+        grid-column-end: 11;
+        grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+section.footer {
+    grid-area: footer;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: auto;
+    justify-content: center;
+    margin: 5px;
+    background: rgba(226, 226, 226, 0.5);
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+}
