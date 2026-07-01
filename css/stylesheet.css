@@ -22,8 +22,8 @@ body {
     'footer';
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto;
-    gap:10px;
-    margin: 5px;
+    gap:1.5%;
+    margin: 0.2%;
 }
 
 
@@ -149,14 +149,11 @@ li.menu_items {
         grid-row-end: auto;
     box-sizing: border-box;
     gap: 2px;
+    padding: 1.1%;
     align-content: space-evenly;
     justify-content: space-evenly;
     background: #E9E5DA;
-}
-
-section.produkt.lista {
-    display: flex;
-    gap: 15px;
+    padding-bottom: 30px;
 }
 
 nav.nav.produkter {
@@ -168,10 +165,11 @@ ul.nav.produkter {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 10px;
-    padding: 15px;
+    padding: 10px;
     background: #DDD3B8;
     font-size: 130%;
+    margin: 0;
+    margin-bottom: 2.4%;
 }
 
 
@@ -181,7 +179,6 @@ section.produkter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 25px;
-    padding-bottom: 30px;
     gap: 30px;
 }
 
@@ -275,6 +272,124 @@ a.buy:hover {
 a.buy:active {
     background:  #244824;
     border-color: #222;
+}
+
+
+
+
+
+
+
+section.ram {
+    display: block ;
+}
+
+article.produktsida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #FBF7EE;
+    box-shadow: 0 0 0;
+    padding: 2%;
+    height: 40em;
+}
+
+section.img_produktbild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding-top: 5px;
+    width: 50%;
+}
+
+img.produktsida {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+section.produktinfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+h2.produktnamn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 200%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+ul.prismeny {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+li.pris {
+    background: #E9E5DA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    width: 20%;
+}
+
+li.antal {
+    background: #E9E5DA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    width: 20%;
+}
+
+a.buy_ikon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+a.buy_ikon {
+    font-size: 80%;
+    align-content: center;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.buy_ikon:hover {
+    background: #226f22;
+    color: white;
+}
+
+a.buy_ikon:active {
+    background:  #244824;
+    border-color: #222;
+}
+
+section.produktbeskrivning {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 2%;
 }
 
 
