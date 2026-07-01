@@ -99,6 +99,19 @@ li.menu_items {
     align-items: center;
 }
 
+img.önskelista_nav {
+    width: 30px;
+    height: 30px;
+}
+
+img.önskelista_nav:hover {
+    filter: invert(100%);
+}
+
+img.önskelista_nav:active {
+    filter: invert(50%);
+}
+
 .menu_link{
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -193,16 +206,18 @@ article {
     background: #FBF7EE;
 }
 
-img.products {
-    width: 100%;
-    display: block;
-    box-sizing: border-box;
-}
-
 section.img {
     background: rgb(255, 255, 255);
     padding: 15px;
     max-height: 100%;
+}
+
+img.products {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    box-sizing: border-box;
 }
 
 section.product {
@@ -240,6 +255,7 @@ p {
 section.buy {
     display: flex;
     justify-content: center;
+    align-content: center;
     margin: 5%;
     padding-top: 5px;
 }
@@ -280,6 +296,8 @@ a.buy:active {
 
 
 
+<!-- Produktsida-->
+
 section.ram {
     display: block ;
 }
@@ -303,11 +321,35 @@ section.img_produktbild {
     width: 50%;
 }
 
-img.produktsida {
+li.splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.slide {
     width: 100%;
-    max-width: 400px;
+    max-height: 580px;
     height: auto;
     display: block;
+    object-fit: cover;
+}
+
+img.slide_zoom {
+    width: 100%;
+    max-height: 580px;
+    height: auto;
+    display: block;
+    object-fit: fill;
+}
+
+section.splide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding-top: 5px;
+    width: 50%;
 }
 
 section.produktinfo {
@@ -315,6 +357,7 @@ section.produktinfo {
     flex-direction: column;
     width: 50%;
     padding: 10px;
+    gap: 1%;
 }
 
 h2.produktnamn {
@@ -350,6 +393,13 @@ li.antal {
     justify-content: center;
     padding: 5px;
     width: 20%;
+}
+
+img.önskelista_prod {
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+    filter: invert(100%);
 }
 
 a.buy_ikon {
@@ -388,11 +438,9 @@ a.buy_ikon:active {
 section.produktbeskrivning {
     display: flex;
     flex-direction: column;
-    padding: 2%;
-    margin-top: 2%;
+    padding: 4%;
+    height: 100%;
 }
-
-
 
 
 
@@ -478,11 +526,12 @@ section.kontakt {
     justify-content: center;
     align-items: center;
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 24%;
+    gap: 10%;
 }
 
 img.sm_1 {
-    height: 38.5px;
+    height: 160%;
 }
 
 p.kontakt {
@@ -529,10 +578,23 @@ h2.footer {
     background: #DDD3B8;
 }
 
-img.sm {
-    width: 100%;
+a.sm {
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
 
+img.sm {
+    width: 130%;
+}
+
+img.sm:hover {
+    filter: invert(100%);
+}
+
+img.sm:active {
+    filter: invert(50%);
+}
 
 
 

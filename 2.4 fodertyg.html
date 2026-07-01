@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ab Sorundann</title>
+    <link rel="stylesheet" href="css\stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+    <div class="wrapper"> <!--Grid container-->
+        <header class="header"> <!--Grid-item-->
+            
+            <nav class="nav top"><!--Flex-container-->
+                <a class="logo" href="1. index.html"><img class="logo" src="img/Logga AW.png" alt="Sorundann logga"></a>    
+                <ul class="nav top"> <!--Flex-container-->
+                    <li class="menu_items"><a class="menu_link" href="#">Sök</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link" href="#">Information</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link" href="#"><img class="önskelista_nav" src="img/önskelista ikon.svg" alt="Önskelista"></a></li> <!--Flex-item-->
+                </ul>
+            </nav class="nav top">
+            <nav class="menu">
+                <ul class="nav menu"> <!--Flex-container-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="1. index.html">Produkter</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="#">Om mig</a></li> <!--Flex-item-->
+                    <li class="menu_items"><a class="menu_link_bottom" href="#kontakt">Kontakt</a></li> <!--Flex-item-->
+                </ul>
+            </nav class="menu">
+        </header> <!--Grid-item end-->
+
+        <main class="main-content"><!--Grid-item-->
+            <nav class ="nav produkter">
+                <ul class="nav produkter">
+                    <li><a class="menu_link" href="1. index.html#dräktmaterial">Dräktmaterial</a></li>
+                    <li><a class="menu_link" href="#">Mönster</a></li>
+                    <li><a class="menu_link" href="#">Tröjor</a></li>
+                    <li><a class="menu_link" href="#">Kurser</a></li>
+                    <li><a class="menu_link" href="#">Övrigt</a></li>
+                </ul>
+            </nav class ="nav produkter">
+            <section class="ram">
+            <article class="produktsida">
+                    <section class="splide">
+                        <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide"><img class="slide" src="img/Fodertyg.jpeg" alt="Fodertyg 1"></li>
+                                    <li class="splide__slide"><img class="slide_zoom" src="img/Fodertyg.jpeg" alt="Fodertyg 2"></li>
+                                </ul>
+                        </div>
+                    </section>
+                        
+                    <section class="produktinfo">
+                        <h2 class="produktnamn">Fodertyg</h2>
+                        <section class="prismeny">
+                            <ul class="prismeny">
+                                <li class="pris">XX kr</li>
+                                <li class="antal">X m</li>
+                                <li class="buy">
+                                    <a class="buy_ikon"href="#">Önskelista
+                                    <img class="önskelista_prod" src="img/önskelista ikon.svg" alt="Önskelista ikon"></a>
+                                </li>
+                            </ul>
+                    </section>
+                    <section class="produktbeskrivning">
+                        <p>Oblekt linnetyg.</p>
+                    </section>
+                </section>
+            </article>  
+            </section>
+
+            </section>
+        </main> <!--Grid-item end-->    
+
+        <footer> <!--Grid-item-->
+            <section id="kontakt" class="kontakt">
+                <p class="kontakt">Email: info@sorundann.se</p>
+                <ul class="social">
+                    <li class="em"><img class="sm"></li>
+                    <li class="em 1"><img class="sm_1" src="img/email icon.svg" alt="email ikon"></li>
+                    <li class="em"><img class="sm"></li>   
+                </ul>
+            </section>
+            <section class="företag">
+                <a class="logo" href="1. index.html"><img class="footer" src="img/Logga AW.png" alt="Sorundann logga"></a>  
+                <section class="AB">
+                    <h1 class="footer">Ab Sorundann</h1>
+                    <p class="footer">Ann Mysing</p>
+                </section>
+            </section>
+            <section class="social">
+                <h2 class="footer">@sorundann</h2>
+                <ul class="social">
+                    <li class="sm"><a class="sm" href="#kontakt"><img class="sm" src="img/pinterest ikon.svg" alt="Pinterest ikon"></a></li>
+                    <li class="sm"><a class="sm" href="#kontakt"><img class="sm" src="img/instagram ikon.svg" alt="Instagram ikon"></a></li>
+                    <li class="sm"><a class="sm" href="#kontakt"><img class="sm" src="img/youtube ikon.svg" alt="YouTube ikon"></a></li>
+                </ul>
+            </section>
+        </footer> <!--Grid-item end--> 
+    </div> <!--End of grid container-->
+
+    <script>
+        // DOM script to initialize Splide
+        new Splide( '.splide', {
+            type   : 'loop',
+            keyboard: 'global',
+        } ).mount();
+    </script>
+</body>
+</html>
